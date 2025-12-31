@@ -110,14 +110,19 @@ rss:
       max_age_days: 1 
 
 
+
+    # IT之家
+    - id: "ithome"
+      name: "ithome"
+      url: "https://www.ithome.com/rss/"
+      max_age_days: 1 
+
     # 36氪
     - id: "36kr"
       name: "36kr"
       url: "https://rsshub.app/36kr/information/travel"
       max_age_days: 1     
 
-
-      
     - id: "huxiu-auto"
       name: "虎嗅"
       url: "https://rsshub.app/huxiu/channel/21"
@@ -298,8 +303,8 @@ advanced:
   # 排序权重（用于重新排序不同平台的热搜）
   # 合起来等于 1
   weight:
-    rank: 0.6                         # 排名权重
-    frequency: 0.3                    # 频次权重
+    rank: 0.1                         # 排名权重
+    frequency: 0.8                    # 频次权重
     hotness: 0.1                      # 热度权重
 
   # 多账号限制
