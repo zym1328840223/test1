@@ -24,22 +24,10 @@ app:
 # name: 显示名称（可自定义，修改后不影响运行）
 # ===============================================================
 platforms:
-  - id: "toutiao"
-    name: "今日头条"
-  - id: "baidu"
-    name: "百度热搜"
   - id: "wallstreetcn-hot"
     name: "华尔街见闻"
   - id: "thepaper"
     name: "澎湃新闻"
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
-  - id: "cls-hot"
-    name: "财联社热门"
-  - id: "ifeng"
-    name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
   - id: "weibo"
     name: "微博"
   - id: "douyin"
@@ -80,23 +68,69 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
+    # - id: "hacker-news"
+    #   name: "Hacker News"
+    #   url: "https://hnrss.org/frontpage"
+    #   # max_age_days: 1               # 示例：只推送1天内的文章
 
-    - id: "gasgoo-auto"
-      name: "Gasgoo"
+    # 盖世新车
+    - id: "gasgoo-NewVehicle"
+      name: "Gasgoo-107"
       url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=107"
-      max_age_days: 3               # 示例：只推送1天内的文章
-      
+      max_age_days: 3  
+    # 盖世行业
+    - id: "gasgoo-Industry"
+      name: "Gasgoo-108"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=108"
+      max_age_days: 1    
+    # 盖世行业
+    - id: "gasgoo-Company"
+      name: "Gasgoo-109"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=109"
+      max_age_days: 1  
+    # 盖世销量
+    - id: "gasgoo-Sales"
+      name: "Gasgoo-110"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=110"
+      max_age_days: 1  
+    # 盖世技术
+    - id: "gasgoo-Tech"
+      name: "Gasgoo-111"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=111"
+      max_age_days: 1 
+    # 盖世新能源
+    - id: "gasgoo-NE"
+      name: "Gasgoo-112"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=112"
+      max_age_days: 1  
+    # 盖世供应链
+    - id: "gasgoo-NE"
+      name: "Gasgoo-113"
+      url: "https://auto.gasgoo.com/Rss/ClassRss.aspx?ClassId=113"
+      max_age_days: 1 
 
+
+    # 36氪
+    - id: "36kr"
+      name: "36kr"
+      url: "https://rsshub.app/36kr/information/travel"
+      max_age_days: 1     
+
+
+      
+    - id: "huxiu-auto"
+      name: "虎嗅"
+      url: "https://rsshub.app/huxiu/channel/21"
+      max_age_days: 1 
+
+
+      
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
     #   url: "https://example.com/feed.xml"
     #   enabled: false
-    #   max_age_days: 0               # 示例：禁用过滤，推送所有文章
+    #   max_age_days: 0               # 示例：禁用过滤，推送所有文章，若为整数则为推送该天数内文章，默认为3
 
 
 # ===============================================================
